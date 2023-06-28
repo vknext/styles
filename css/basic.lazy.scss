@@ -1,45 +1,39 @@
 /* основной файл темы */
 // здесь исправляем покраску некоторых компонентов VK
 
-html[dir],
-[dir] body #page_wrap,
-[dir] body {
-	background-color: var(--background_page);
-}
-
 :root body {
 	.post_from_tt_row.active {
-		background-color: var(--background_highlighted) !important;
-		color: var(--text_primary) !important;
+		background-color: var(--vkui--color_transparent--active) !important;
+		color: var(--vkui--color_text_primary) !important;
 	}
 
 	/* фикс акцентного выбора диалога в новом интерфейсе мессенджера */
 	.nim-dialog:not(.nim-dialog_deleted) {
 		&:not(.nim-dialog_classic).nim-dialog_selected {
 			.nim-dialog--date {
-				color: var(--text_secondary);
+				color: var(--vkui--color_text_secondary);
 			}
 
 			.nim-dialog--preview {
-				color: var(--text_subhead);
+				color: var(--vkui--color_text_subhead);
 			}
 		}
 
 		&.nim-dialog.nim-dialog_selected:hover {
-			border-color: var(--separator_alpha);
+			border-color: var(--vkui--color_separator_primary_alpha);
 		}
 
 		&:hover + .nim-dialog.nim-dialog_selected,
 		&.nim-dialog_selected + .nim-dialog {
-			border-color: var(--separator_alpha);
+			border-color: var(--vkui--color_separator_primary_alpha);
 		}
 
 		&:not(.nim-dialog_classic).nim-dialog_selected .nim-dialog--photo .online.mobile::after {
-			--online-badge-background: var(--background_content);
+			--online-badge-background: var(--vkui--color_background_content);
 		}
 
 		&:not(.nim-dialog_classic).nim-dialog_selected {
-			background-color: var(--background_highlighted);
+			background-color: var(--vkui--color_transparent--active);
 		}
 	}
 
@@ -52,73 +46,63 @@ html[dir],
 	img.post_img,
 	img.reply_img,
 	.im-prebody img {
-		background-color: var(--background_light) !important;
-	}
-
-	/* фикс попаутов */
-	.ReactionsMenu,
-	.eltt:not(#audio_layer_tt),
-	.ui_actions_menu--actionSheet,
-	.vkuiSnackbar__body,
-	.vkuiActionSheet {
-		--modal_card_background: var(--background_light);
-		background-color: var(--modal_card_background);
+		background-color: var(--vkui--color_background_tertiary) !important;
 	}
 
 	.media_link__label,
 	.PostBottomAction--withBg {
-		background-color: var(--background_light);
+		background-color: var(--vkui--color_background_tertiary);
 	}
 
 	/* фикс иконок в врайтбаре */
 	.im-send-btn__icon {
-		color: var(--writebar_icon);
+		color: var(--vkui--color_write_bar_icon);
 	}
 
 	#ads_left.ads_left_empty + .left_menu_nav_wrap {
-		border-color: var(--separator_common);
+		border-color: var(--vkui--color_separator_primary);
 	}
 
 	.msg,
 	.box_msg,
 	.box_msg_gray {
-		background-color: var(--background_content);
+		background-color: var(--vkui--color_background_content);
 	}
 
 	.emoji_smile_cont2:hover {
-		background: var(--background_hover);
+		background: var(--vkui--color_transparent--hover);
 	}
 
 	.gift_price,
 	.gift_free {
-		background-color: var(--content_tint_background);
-		color: var(--accent);
+		background-color: var(--vkui--color_background_secondary);
+		color: var(--vkui--color_icon_accent);
 	}
 
 	.im-page_classic.im-page .im-page--dialogs-search {
-		background-color: var(--background_content);
+		background-color: var(--vkui--color_background_content);
 	}
 
 	.olist_item_name {
-		color: var(--text_primary);
+		color: var(--vkui--color_text_primary);
 	}
 
 	nobr#stl_text {
-		color: var(--text_secondary);
+		color: var(--vkui--color_text_secondary);
 		filter: grayscale(1);
 	}
 
 	.box_controls,
 	.box_title_wrap {
-		background: var(--modal_card_background);
+		background: var(--vkui--color_background_modal);
 	}
 
 	.BtAddReportButton {
-		color: var(--text_primary);
+		color: var(--vkui--color_text_primary);
 	}
 
 	.vkuiScreenSpinner .vkuiScreenSpinner__container {
-		background: var(--background_light);
+		background: var(--vkui--color_background_tertiary);
 	}
 
 	.EcommSkeleton__block:after {
@@ -131,32 +115,32 @@ html[dir],
 	}
 
 	/* лендинги */
-	--pagesColorNavSelected: var(--text_primary);
-	--colorGray: var(--text_primary);
+	--pagesColorNavSelected: var(--vkui--color_text_primary);
+	--colorGray: var(--vkui--color_text_primary);
 	--footerBorderColor: var(--separator_alternate);
-	--pageButtonBackgroundColor: var(--background_hover);
-	--colorNavBorderHover: var(--separator_common);
-	--bottomNavTextColor: var(--text_secondary);
+	--pageButtonBackgroundColor: var(--vkui--color_transparent--hover);
+	--colorNavBorderHover: var(--vkui--color_separator_primary);
+	--bottomNavTextColor: var(--vkui--color_text_secondary);
 
 	.BlogPage--defaultTheme,
 	.BlogPost--defaultTheme {
-		--blogPageHeaderTextColor: var(--accent);
-		--blogPageCounterColor: var(--text_primary);
+		--blogPageHeaderTextColor: var(--vkui--color_icon_accent);
+		--blogPageCounterColor: var(--vkui--color_text_primary);
 	}
 
 	.BlogPostThumb__text {
-		color: var(--text_secondary);
+		color: var(--vkui--color_text_secondary);
 	}
 
 	.PageNavigation_wrap {
-		background-color: var(--header_background);
+		background-color: var(--vkui--color_header_background);
 	}
 
 	.TeamPageHeader__subtitle,
 	.AboutPageMetric__value,
 	.PageSectionTitle,
 	.PageTitle {
-		color: var(--text_primary);
+		color: var(--vkui--color_text_primary);
 	}
 
 	.AboutLinksItem__subtitle,
@@ -165,7 +149,7 @@ html[dir],
 	.ProductsLandingItem__subtitle,
 	.AboutPageMetric__title,
 	.ProductsPageHeader__appDescription {
-		color: var(--text_secondary);
+		color: var(--vkui--color_text_secondary);
 	}
 
 	.TeamPageJoinBlock__button {
@@ -173,74 +157,48 @@ html[dir],
 		background-color: var(--button_primary_background);
 	}
 
-	.PageSection--gradient::before {
-		background-image: linear-gradient(
-			to bottom,
-			rgba(35, 35, 36, 0),
-			rgba(35, 35, 36, 0.02) 9%,
-			rgba(35, 35, 36, 0.06) 19%,
-			rgba(35, 35, 36, 0.12) 28%,
-			rgba(35, 35, 36, 0.2) 38%,
-			rgba(35, 35, 36, 0.29) 48%,
-			rgba(35, 35, 36, 0.39) 57%,
-			rgba(35, 35, 36, 0.5) 66%,
-			rgba(35, 35, 36, 0.61) 74%,
-			rgba(35, 35, 36, 0.71) 81%,
-			rgba(35, 35, 36, 0.8) 88%,
-			rgba(35, 35, 36, 0.88) 93%,
-			rgba(35, 35, 36, 0.95) 97%,
-			rgba(35, 35, 36, 0.98) 99%,
-			#232324
-		);
-	}
-
-	/* попап */
-	.ChatSettings__content {
-		background-color: var(--background_page);
-	}
-
 	/* стикеры */
 	.im_stickers_promo_banner,
 	.im_stickers_bl_wrap {
-		background-color: var(--backgroud_page);
+		background-color: var(--vkui--color_background);
 	}
 
 	.box_body .im_stickers_store_wrap .ui_tabs {
-		border-color: var(--separator_common);
+		border-color: var(--vkui--color_separator_primary);
 	}
 
 	.im_sticker_bl_info {
-		background-color: var(--content_tint_background);
+		background-color: var(--vkui--color_background_secondary);
 	}
 
 	.im_sticker_bl_name {
-		color: var(--text_primary);
+		color: var(--vkui--color_text_primary);
 	}
 
 	.im_sticker_bl_desc {
-		color: var(--text_secondary);
+		color: var(--vkui--color_text_secondary);
 	}
 
 	.page_block .im_stickers_promo_banner,
 	.page_block .im_stickers_bl_wrap {
-		background-color: var(--background_content);
+		background-color: var(--vkui--color_background_content);
 	}
 
 	/* рекламный кабинет */
 
 	.Header {
-		background-color: var(--header_background);
-		box-shadow: 0 1px 0 var(--separator_common);
+		background-color: var(--vkui--color_header_background);
+		box-shadow: 0 1px 0 var(--vkui--color_separator_primary);
 	}
 
 	.HeaderBudget__link,
 	.HeaderSectionSwitcher__buttonText {
-		color: var(--header_text);
+		color: var(--vkui--color_text_primary);
 	}
 
 	.HeaderNotifier {
-		color: var(--accent);
-		--notifier-hover-bg: var(--background_hover);
+		color: var(--vkui--color_icon_accent);
+		--notifier-hover-bg: var(--vkui--color_transparent--hover);
 	}
 
 	.SideOfficeMenu__link:focus,
@@ -253,11 +211,11 @@ html[dir],
 	.HeaderProfile:hover,
 	.HeaderBudget:focus,
 	.HeaderBudget:hover {
-		background-color: var(--background_hover);
+		background-color: var(--vkui--color_transparent--hover);
 	}
 
 	.HeaderBudget__button a {
-		color: var(--accent);
+		color: var(--vkui--color_icon_accent);
 	}
 
 	.SideOfficeMenu__link--active {
@@ -266,26 +224,26 @@ html[dir],
 
 	.SideOfficeMenu__navList::after,
 	.SideOfficeMenu {
-		background-color: var(--background_content);
+		background-color: var(--vkui--color_background_content);
 	}
 
 	.SideOfficeMenu__link--active .SideOfficeMenu__linkIcon {
-		color: var(--accent);
+		color: var(--vkui--color_icon_accent);
 	}
 
 	.BudgetStats__td--money,
 	.Breadcrumb--bold,
 	.SideOfficeMenu__link,
 	.SideOfficeMenu__linkText {
-		color: var(--text_primary);
+		color: var(--vkui--color_text_primary);
 	}
 
 	.SideOfficeMenu__nav::after {
-		background: linear-gradient(rgba(35, 35, 36, 0), var(--background_hover) 70%), 0 100%;
+		background: linear-gradient(rgba(35, 35, 36, 0), var(--vkui--color_transparent--hover) 70%), 0 100%;
 	}
 
 	.SideOfficeMenu__linkIcon {
-		color: var(--icon_secondary);
+		color: var(--vkui--color_icon_secondary);
 	}
 
 	.BudgetBalance__autoBudget,
@@ -293,11 +251,11 @@ html[dir],
 	.Breadcrumbs__list,
 	.SideOfficeMenu,
 	.SideOfficeMenu__toggleButton {
-		border-color: var(--separator_common);
+		border-color: var(--vkui--color_separator_primary);
 	}
 
 	.Breadcrumbs {
-		background-color: var(--background_content);
+		background-color: var(--vkui--color_background_content);
 	}
 
 	.GoalFormatConverter__withoutGoalBtn,
@@ -305,12 +263,12 @@ html[dir],
 	.GoalsColumn__headerText,
 	.HeaderProfile__DropdownUserConnect,
 	.Breadcrumb__link {
-		color: var(--text_secondary);
+		color: var(--vkui--color_text_secondary);
 	}
 
 	.GoalsFilterList__item {
 		color: var(--panel_tab_inactive_text);
-		background-color: var(--header_background);
+		background-color: var(--vkui--color_header_background);
 		border-color: rgb(0 0 0 / 0);
 		transition: 0.3s;
 	}
@@ -318,7 +276,7 @@ html[dir],
 	.HeaderProfile__DropdownUser:hover,
 	.HeaderProfile__DropdownRow:hover,
 	.GoalsFilterList__item:hover {
-		background-color: var(--background_hover);
+		background-color: var(--vkui--color_transparent--hover);
 	}
 
 	.GoalsFilterList__item--selected {
@@ -330,92 +288,39 @@ html[dir],
 	.GoalsList__column,
 	.Office__content .ads_edit_page_wrap3,
 	.SideMenu__office {
-		background-color: var(--background_content);
+		background-color: var(--vkui--color_background_content);
 	}
 
 	.GoalsListItem {
-		background-color: var(--background_hover);
-		color: var(--text_primary);
-		border-color: var(--separator_common);
+		background-color: var(--vkui--color_transparent--hover);
+		color: var(--vkui--color_text_primary);
+		border-color: var(--vkui--color_separator_primary);
 	}
 
 	.GoalsListItem--disabled,
 	.GoalsListItem--disabled:hover {
-		background-color: var(--background_hover);
-		border-color: var(--separator_common);
+		background-color: var(--vkui--color_transparent--hover);
+		border-color: var(--vkui--color_separator_primary);
 	}
 
 	.HeaderProfile__Dropdown {
-		background-color: var(--background_content);
-		box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 0 0 1px var(--separator_common);
+		background-color: var(--vkui--color_background_content);
+		box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 0 0 1px var(--vkui--color_separator_primary);
 	}
 
 	.HeaderProfile__DropdownUserName,
 	.HeaderProfile__DropdownRow {
-		color: var(--text_primary);
+		color: var(--vkui--color_text_primary);
 	}
 
 	.BudgetStats,
 	.BudgetBalance {
-		background-color: var(--content_tint_background);
-		border-color: var(--separator_common);
-	}
-
-	/* вкашная покраска тт */
-	.PostButtonReactions--post.PostButtonReactions--active .PostButtonReactions__title {
-		color: var(--reaction-button-title-color-dark, var(--text_secondary));
-	}
-
-	.PostButtonReactions--post.PostButtonReactions--active {
-		--post-bottom-action-background-color: var(
-			--reaction-button-background-color-dark,
-			var(--content_tint_background)
-		);
-	}
-
-	.left_menu_nav_wrap .ui_actions_menu_icons,
-	.left_menu_nav_wrap .ui_actions_menu_icons {
-		background: 0 0;
+		background-color: var(--vkui--color_background_secondary);
+		border-color: var(--vkui--color_separator_primary);
 	}
 
 	.nim-peer.nim-peer_small .nim-peer--photo > img::after,
 	.nim-peer.nim-peer_small .nim-peer--photo .im_grid > img::after {
-		background-color: var(--background_hover);
+		background-color: var(--vkui--color_transparent--hover);
 	}
-
-	.PostBottomAction--withBg::before {
-		background-image: linear-gradient(rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02));
-	}
-
-	.PostBottomAction--withBg:active::before {
-		background-image: linear-gradient(rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03));
-	}
-
-	.PostBottomAction.like.active {
-		--post-bottom-action-background-color: var(--like-button-background-color-dark, var(--content_tint_background));
-	}
-
-	.StickersPanel__arrow--left {
-		background: linear-gradient(to right, #222 0, #222 63%, rgba(34, 34, 34, 0.84) 78%, rgba(34, 34, 34, 0) 100%);
-	}
-
-	.StickersPanel__arrow--left {
-		background: linear-gradient(to left, #222 0, #222 63%, rgba(34, 34, 34, 0.84) 78%, rgba(34, 34, 34, 0) 100%);
-	}
-
-	.StickersPanel__arrow--right {
-		background: linear-gradient(to right, rgba(34, 34, 34, 0) 0, rgba(34, 34, 34, 0.84) 22%, #222 37%, #222 100%);
-	}
-
-	.StickersPanel__arrow--right {
-		background: linear-gradient(to left, rgba(34, 34, 34, 0) 0, rgba(34, 34, 34, 0.84) 22%, #222 37%, #222 100%);
-	}
-
-	.FeedbackTooltip__wrapper::after {
-		background-image: linear-gradient(to bottom, rgba(51, 51, 51, 0), #333);
-	}
-}
-
-.vkui__root {
-	--vkui--color_background_modal: var(--modal_card_background) !important;
 }

@@ -1,6 +1,6 @@
 html body .side_bar ol li .LeftMenu__itemLink,
-html body .side_bar ol li [class^='LeftMenuItem-module__item--'],
-html body .side_bar ol li [class^='LeftMenuItem-module__label--'] {
-	color: var(--text_secondary) !important;
-	--counter_secondary_background: var(--icon_tertiary_alpha) !important;
+html body .side_bar ol li [class^="LeftMenuItem-module__item--"],
+html body .side_bar ol li [class^="LeftMenuItem-module__label--"] {
+	color: var(--vkui--color_text_secondary) !important;
+	--counter_secondary_background: var(--vkui--color_icon_tertiary_alpha) !important;
 }

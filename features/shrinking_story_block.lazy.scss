@@ -27,20 +27,20 @@
 	.story_feed_new_item.stories_feed_preview_item
 	.stories_feed_preview_author
 	.stories_feed_preview_authors_wrapper::after {
-	border-color: var(--accent) !important;
+	border-color: var(--vkui--color_icon_accent) !important;
 }
 
 .stories_feed_preview_item_groups_block.story_feed_new_item.stories_feed_preview_item
 	.stories_feed_preview_author
 	.stories_feed_preview_author_name {
-	color: #ffa000 !important;
+	color: var(--vkui--color_accent_orange) !important;
 }
 
 [dir]
 	.stories_feed_preview_item_groups_block.story_feed_new_item.stories_feed_preview_item
 	.stories_feed_preview_author
 	.stories_feed_preview_authors_wrapper::after {
-	border-color: #ffa000 !important;
+	border-color: var(--vkui--color_accent_orange) !important;
 }
 
 [dir] .stories_feed_preview_item .stories_feed_preview_author .stories_feed_preview_authors_wrapper::after {
@@ -49,5 +49,10 @@
 
 [dir] .stories_feed_preview_item .stories_feed_preview_author .stories_feed_preview_author_name {
 	text-shadow: none !important;
-	color: var(--accent) !important;
+	color: var(--vkui--color_icon_accent) !important;
+}
+
+.stories_feed_preview_author_cell,
+.stories_feed_preview_add {
+	background-color: var(--header_alternate_background, var(--vkui--color_background_modal)) !important;
 }

@@ -1,7 +1,7 @@
 /* Альтернативный скроллбар */
 
 body {
-	--vklScroll: var(--scrollbar_background, var(--background_content));
+	--vklScroll: var(--scrollbar_background, var(--vkui--color_background_content));
 	--vklScrollThumb: var(--scrollbar_thumb, var(--button_secondary_background_highlighted));
 }
 
