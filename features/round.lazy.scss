@@ -1070,3 +1070,430 @@ html.VKNextChatsRight .im-page:not(.im-page_classic) .im-page--history {
 html.VKNextChatsRight .im-page:not(.im-page_classic) .im-chat-input {
 	border-radius: 0 0 0 var(--round_radius) !important;
 }
+
+/* VK Закругление элементов 2023 [felixan] */
+
+/* Профиль | Паблик */
+.ProfileHeader, 
+.Preview-module__coverWrap--fehkt, 
+.vkuiGroup--card {
+	border-radius: var(--round_radius) !important;
+}
+
+.ProfileHeader__in {
+	border-radius: 12px 12px var(--round_radius) var(--round_radius) !important;
+}
+
+.vkuiGroup--card>.vkuiGroup__inner {
+	border-radius: var(--round_radius) !important;
+}
+
+.ProfileGift .vkuiAvatar, 
+.ProfileGiftsSkeleton__item {
+	border-radius: var(--round_radius) !important;
+}
+
+.vkuiButton, 
+.H0Zlpjp2PVW2nRlD.wGa9D1Hzhv_13Ald {
+	border-radius: var(--round_radius) !important;
+} 
+
+.vkuiDropdown {
+	border-radius: var(--round_radius) !important;
+}
+
+.DropdownActionSheetItem:hover,
+.DropdownActionSheet .vkuiSimpleCell--sizeY-compact:hover, 
+.DropdownActionSheetItem, 
+.DropdownActionSheet .vkuiSimpleCell--sizeY-compact {
+	border-radius: var(--round_radius) !important;
+}
+
+.page-group-actions .page-group-action {
+	border-radius: var(--round_radius) !important;
+}
+
+.ModalBox-module__container--WohhF {
+	border-radius: var(--round_radius) !important;
+}
+
+.rY27IPGdeDBioVrF, 
+._OdEaRZRcthBcQty>*, 
+._OdEaRZRcthBcQty {
+	border-radius: var(--round_radius) !important;
+} 
+
+.redesigned-group-cover {
+	border-radius: var(--round_radius) var(--round_radius) 0 0 !important;
+}
+
+.redesigned-group-info {
+	border-radius:  12px 12px var(--round_radius) var(--round_radius) !important;
+} 
+
+.group-tab-photos {
+	border-radius: var(--round_radius) !important;
+} 
+
+.gift_image img {
+	border-radius: var(--round_radius) !important;
+} 
+
+.OwnerContentTabPhotosItem:nth-of-type(1),
+.OwnerContentTabPhotosItem:nth-of-type(1) .OwnerContentTabPhotosItem__photoImage {
+	border-radius: var(--round_radius) 2 2 2 !important;
+}
+
+.OwnerContentTabPhotosItem:nth-of-type(3),
+.OwnerContentTabPhotosItem:nth-of-type(3) .OwnerContentTabPhotosItem__photoImage {
+	border-radius: 2 2 2 var(--round_radius) !important;
+}
+
+.OwnerContentTabPhotosItem:nth-of-type(4),
+.OwnerContentTabPhotosItem:nth-of-type(4) .OwnerContentTabPhotosItem__photoImage {
+	border-radius: 2 var(--round_radius) 2 2 !important;
+}
+
+.OwnerContentTabPhotosItem:nth-of-type(6),
+.OwnerContentTabPhotosItem:nth-of-type(6) .OwnerContentTabPhotosItem__photoImage {
+	border-radius: 2 2 var(--round_radius) 2 !important;
+}
+
+.OwnerContentTabPhotosItem:nth-of-type(1) {
+    border-top-left-radius: var(--round_radius) !important;
+}
+
+.OwnerContentTabPhotosItem:nth-of-type(3) {
+    border-top-right-radius: var(--round_radius) !important;
+}
+
+.OwnerContentTabPhotosItem:nth-of-type(4) {
+    border-bottom-left-radius: var(--round_radius) !important;
+}
+
+.OwnerContentTabPhotosItem:nth-of-type(6) {
+    border-bottom-right-radius: var(--round_radius) !important;
+}
+
+.vkuiTabsItem {
+	border-radius: var(--round_radius) !important;
+}
+
+.ui_tab_new, 
+.ui_tabs_header .ui_tab_new {
+	border-radius: var(--round_radius) !important;
+}
+
+/* Профиль | Паблик (Скелеты) */
+
+.ProfileGroupSkeleton {
+	border-radius: var(--round_radius) !important;
+}
+
+.ProfileContentTabsSkeleton__photo:first-child {
+    border-top-left-radius: var(--round_radius) !important;
+}
+
+.ProfileContentTabsSkeleton__photo:nth-child(3) {
+    border-top-right-radius: var(--round_radius) !important;
+}
+
+.ProfileContentTabsSkeleton__photo:last-child {
+    border-bottom-right-radius: var(--round_radius) !important;
+}
+
+.ProfileContentTabsSkeleton__photo:nth-child(4) {
+    border-bottom-left-radius: var(--round_radius) !important;
+}
+
+.ProfileContentTabsSkeleton__action {
+	border-radius: var(--round_radius) !important;
+}
+
+.ProfileActionsSkeleton__button {
+	border-radius: var(--round_radius) !important;
+}
+
+.ProfileNarrativesSkeleton__button {
+	border-radius: var(--round_radius) !important;
+}
+
+.OwnerPostSkeleton__attach {
+	border-radius: var(--round_radius) !important;
+}
+
+/* Звонки */
+
+.PageBlock {
+	border-radius: var(--round_radius) !important;
+}
+
+.CallsReactionsBanner {
+	border-radius: var(--round_radius) !important;
+}
+
+.CallHistoryScreen--content > div.PageBlock {
+	border-radius: var(--round_radius) !important;
+}
+
+.CallsAppDownloadBanner__link {
+	border-radius: var(--round_radius) !important;
+}
+
+.CallsAppDownloadBanner__qrLink {
+	border-radius: var(--round_radius) !important;
+}
+
+/* Клипы */
+
+.ShortVideoStubRow__link {
+	border-radius: var(--round_radius) !important;
+}
+
+.ShortVideoStubRow__qrLink {
+	border-radius: var(--round_radius) !important;
+}
+
+/* Настройки */
+
+.page_block_header_redesign {
+	border-radius: var(--round_radius) var(--round_radius) 0 0 !important;
+}
+
+.pedit_redesign__fields {
+	border-radius: var(--round_radius) !important;
+}
+
+.privacy_dropdown .body__flex, 
+.privacy_dropdown {
+	border-radius: 0 0 var(--round_radius) var(--round_radius) !important;
+}
+
+.groups_create_type .groups_create_tile {
+	border-radius: var(--round_radius) !important;
+}
+
+.vkuiFormField__border {
+	border-radius: var(--round_radius) !important;
+}
+
+.ui_rmenu_item, .ui_rmenu_subitem, 
+.LeftMenuItem-module__item--dDdjm, 
+.LeftMenuItem-module__item {
+	border-radius: var(--round_radius) !important;
+}
+
+/* Видео */
+
+.VideoRecomsItem__thumb_wrap:before, 
+.VideoRecomsItem__thumb_wrap {
+    border-radius: var(--round_radius) !important;
+}
+
+.videoplayer_settings_menu_list, 
+.videoplayer_settings_menu_sublist {
+    border-radius: var(--round_radius) !important;
+}
+
+.yNIl_H8GkmWvVnLr .JSlLHIGKDbsi7QkN:nth-last-child(1) {
+    border-bottom-left-radius: var(--round_radius) !important;
+    border-bottom-right-radius: var(--round_radius) !important;
+}
+
+.yNIl_H8GkmWvVnLr {
+    border-radius: var(--round_radius) !important;
+}
+
+.yNIl_H8GkmWvVnLr .JSlLHIGKDbsi7QkN:nth-child(1) {
+    border-top-left-radius: var(--round_radius) !important;
+    border-top-right-radius: var(--round_radius) !important;
+
+}
+
+/* Новости */
+
+.MediaGridContainerWeb--post > .MediaGrid--singleOld.MediaGrid > .MediaGrid__thumb--restrictedHeight.MediaGrid__thumb--single.MediaGrid__thumb > .MediaGrid__interactive--clickable.MediaGrid__interactive > .MediaGrid__imageOld, 
+.MediaGridContainerWeb--post > .MediaGrid--singleOld.MediaGrid > .MediaGrid__thumb--restrictedHeight.MediaGrid__thumb--single.MediaGrid__thumb > .MediaGrid__interactive > .MediaGrid__imageOld, 
+._post_content > .post_content > .post_info > .wall_text > .copy_quote > .MediaGridContainerWeb--post > .MediaGrid--singleOld.MediaGrid > .MediaGrid__thumb--single.MediaGrid__thumb > .MediaGrid__interactive--clickable.MediaGrid__interactive > .MediaGrid__imageOld, 
+.PhotoPrimaryAttachment__imageElement--inCarousel.PhotoPrimaryAttachment__imageElement, ._post_content > .post_content > div > .wall_text > .PhotoCarouselBlock > .wall_post_photo_carousel.PhotoCarousel > .PhotoCarousel__items > .PhotoCarouselItem--active.PhotoCarouselItem.PhotoCarouselBlockItem, 
+.MediaGridContainerWeb--post > .MediaGrid--singleOld.MediaGrid > .MediaGrid__thumb--single.MediaGrid__thumb > .MediaGrid__interactive--clickable.MediaGrid__interactive > .MediaGrid__imageOld {
+	border-radius: var(--round_radius) !important;
+}
+
+.ui_gallery_wall_cards 
+.wall_card__body {
+	border-radius: 0 0 var(--round_radius) var(--round_radius) !important;
+}
+
+.PageBlockShowMore {
+	border-radius: 0 0 var(--round_radius) var(--round_radius) !important;
+}
+
+.feedback_row_answer {
+	border-radius: var(--round_radius) !important;
+}
+
+.audio_pl_snippet2 .audio_pl_snippet__cover {
+	border-radius: var(--round_radius) 0 0 0 !important;
+}
+
+.audio_pl_snippet2.audio_pl__has_thumb {
+    border-top-left-radius: var(--round_radius) !important;
+}
+
+.pv_cont .pv_image_wrap {
+    border-radius: var(--round_radius) 0 0 0 !important;
+}
+
+.MediaGrid {
+    --mg-border-radius-wrapper: var(--round_radius) !important;
+}
+
+.prefix_input_border {
+    border-radius: var(--round_radius) !important;
+}
+
+.VideoCard__trailer, 
+.VideoCard__thumb, .VideoCard__thumbImg, 
+.VideoCard__thumb:after {
+    border-radius: var(--round_radius) !important;
+}
+
+.PlaylistPanel__item {
+    border-radius: var(--round_radius) !important;
+}
+
+.VideoCard--playlist .VideoCard__info {
+    border-bottom-left-radius: var(--round_radius) !important;
+    border-bottom-right-radius: var(--round_radius) !important;
+}
+
+/* Мессенджер */
+
+.MessageReactionsPanel {
+	border-radius: var(--round_radius) !important;
+}
+
+.yLiZwkmACmxJtR6V, 
+.SNfyPUdJoHZvdDmH {
+	border-radius: var(--round_radius) !important;
+}
+
+.StickerPickerViewer {
+	border-radius: var(--round_radius) !important;
+}
+
+.ChatSettingsPresetPanel__preset--selected {
+    border-radius: var(--round_radius) !important;
+}
+
+/* Мини-чаты */
+
+.AttachPhotos--inBubble {
+    border-radius: var(--round_radius) !important;
+}
+
+.AttachGift__image {
+    border-radius: var(--round_radius) !important;
+}
+
+.AttachCard--inBubble .AttachCard__pic {
+    border-radius: var(--round_radius) !important;
+}
+
+.FCWindow--rounded {
+    border-radius: var(--round_radius) !important;
+}
+
+.mv_minimized #mv_box {
+    border-radius: var(--round_radius) !important;
+}
+
+/* Элементы в шапке сайта */
+
+#top_profile_menu.top_profile_menu_new {
+	border-radius: 0 0 var(--round_radius) var(--round_radius) !important;
+}
+
+#top_notify_wrap {
+	border-radius: 0 0 var(--round_radius) var(--round_radius) !important;
+}
+
+.SearchResults-module__root--Mwfk1 {
+	border-radius: 0 0 var(--round_radius) var(--round_radius) !important;
+}
+
+.EcosystemServicesNavigationDropdown_popout__NYAnq {
+	border-radius: 0 0 var(--round_radius) var(--round_radius) !important;
+}
+
+.audio_layer_container {
+	border-radius: 0 0 var(--round_radius) var(--round_radius) !important;
+}
+
+#audio_layer_tt {
+	border-radius: 0 0 var(--round_radius) var(--round_radius) !important;
+}
+
+.notify_sources_tt_content .line_cell:hover, 
+.notify_sources_tt_content .content:not(:hover) .line_cell.selected {
+    border-radius: var(--round_radius) !important;
+}
+
+.idd_popup .idd_item.idd_hover, 
+.idd_popup .idd_item.idd_hover_sublist_parent, 
+.idd_popup .idd_item.idd_hl {
+    border-radius: var(--round_radius) !important;
+}
+
+.EcosystemMultiAccounts_wrapper__VILBt .EcosystemMultiAccounts_addCell__y9cDW:hover {
+    border-radius: var(--round_radius) !important;
+}
+
+/* Комментарии */
+
+.page_preview_photo, 
+.page_preview_video, 
+.page_preview_graffiti {
+    border-radius: var(--round_radius) !important;
+}
+
+.page_pics_preview .page_media_x_wrap {
+    border-radius: 0 var(--round_radius) 0 0 !important;
+}
+
+/* Покупка стикеров */
+
+.StickerStylesMenuItem {
+	border-radius: var(--round_radius) !important;
+}
+
+.im_sticker_bl_demo_thumb {
+    border-radius: var(--round_radius) var(--round_radius) 0 0 !important;
+}
+
+.im_sticker_bl_demo_background {
+    border-radius: var(--round_radius) var(--round_radius) 0 0 !important;
+}
+
+/* Сбор средств */
+
+.payments_money_transfer_chunk_amount {
+	border-radius: var(--round_radius) !important;
+}
+
+/* Тултип VK Next */
+
+.gr2qxunLkTFvefBY {
+    border-radius: var(--round_radius) !important;
+}
+
+.vpgp8SYo4x30CvmN {
+    border-radius: var(--round_radius) !important;
+}
+
+/* Левое меню VK Next */
+
+body .side_bar [class^=LeftMenuItem-module__item--]:hover [class^=LeftMenuItem-module__label--] {
+    border-radius: var(--round_radius) !important;
+}
