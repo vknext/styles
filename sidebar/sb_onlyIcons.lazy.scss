@@ -1,5 +1,6 @@
 body {
 	.side_bar {
+		z-index: 103 !important;
 		width: 54px !important;
 		padding-left: 258px !important;
 		margin-left: -149px !important;
@@ -7,23 +8,23 @@ body {
 		margin-right: -149px !important;
 
 		.LeftMenu__separator,
-		[class^='LeftMenuOld-module__separator--'] {
+		[class^="LeftMenuOld-module__separator--"] {
 			margin-left: 0;
 			margin-right: 0;
 		}
-		[class^='LeftMenuSection-module__hiddenItems--'],
-		[class*=' LeftMenuSection-module__hiddenItems--'] {
+		[class^="LeftMenuSection-module__hiddenItems--"],
+		[class*=" LeftMenuSection-module__hiddenItems--"] {
 			position: relative;
 			width: calc(var(--left-menu-icon-size, 20px) + 11) !important;
 		}
 
 		.LeftMenu__itemLink,
-		[class^='LeftMenuItem-module__item--'] {
+		[class^="LeftMenuItem-module__item--"] {
 			position: relative;
 			width: calc(var(--left-menu-icon-size, 20px) + 11) !important;
 
 			.left_count_wrap,
-			[class^='LeftMenuItem-module__counter--'] {
+			[class^="LeftMenuItem-module__counter--"] {
 				position: absolute;
 				top: 0px;
 				left: 8px;
@@ -34,7 +35,7 @@ body {
 
 			&:hover {
 				.LeftMenu__itemLabel,
-				[class^='LeftMenuItem-module__label--'] {
+				[class^="LeftMenuItem-module__label--"] {
 					display: block !important;
 					position: fixed !important;
 					background: #000 !important;
@@ -62,7 +63,7 @@ body {
 		}
 
 		.LeftMenu__itemLabel,
-		[class^='LeftMenuItem-module__label--'],
+		[class^="LeftMenuItem-module__label--"],
 		.left_menu_nav_wrap {
 			display: none !important;
 		}
