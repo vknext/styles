@@ -41,10 +41,6 @@ body.new_header_design #ads_left.ads_left_empty + .left_menu_nav_wrap {
 	[class^="LeftMenuItem-module__settings--"] {
 		left: -30px !important;
 	}
-
-	[class^="LeftMenuItem-module__icon--"] > img {
-		border-radius: 50% !important;
-	}
 }
 
 .HeaderNav__item.HeaderNav__item--logo {
