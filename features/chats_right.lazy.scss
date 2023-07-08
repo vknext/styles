@@ -15,3 +15,26 @@
 		right: 0 !important;
 	}
 }
+
+.im-page:not(.im-page_classic) {
+	.im-page--dialogs {
+		border-radius: 0 var(--vkui--size_border_radius_paper--regular) var(--vkui--size_border_radius_paper--regular) 0 !important;
+	}
+
+	.im-page--history {
+		border-radius: var(--vkui--size_border_radius_paper--regular) 0 0 var(--vkui--size_border_radius_paper--regular) !important;
+	}
+
+	.im-chat-input {
+		border-radius: 0 0 0 var(--vkui--size_border_radius_paper--regular) !important;
+	}
+
+	.im-page--dialogs-search.ui_search {
+		border-top-right-radius: inherit !important;
+		border-top-left-radius: 0 !important;
+	}
+
+	.im-page--dialogs-footer {
+		border-bottom-right-radius: inherit !important;
+	}
+}
