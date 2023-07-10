@@ -1,10 +1,17 @@
-/* основной файл темы */
-// здесь исправляем покраску некоторых компонентов VK
+/* основной файл темы
+здесь исправляем покраску некоторых компонентов VK
+*/
 
 :root body {
 	.post_from_tt_row.active {
 		background-color: var(--vkui--color_transparent--active) !important;
 		color: var(--vkui--color_text_primary) !important;
+	}
+
+	.ChatSettingsMembersWidget,
+	.tt_default,
+	.tt_default_right {
+		background-color: var(--vkui--color_background_modal);
 	}
 
 	/* фикс акцентного выбора диалога в новом интерфейсе мессенджера */
@@ -45,7 +52,10 @@
 	.nim-peer.nim-peer_small .nim-peer--photo > img,
 	img.post_img,
 	img.reply_img,
-	.im-prebody img {
+	.im-prebody img,
+	.im-popular--avatar::before,
+	.im-popular--avatar::after,
+	.im-popular--avatar {
 		background-color: var(--vkui--color_background_tertiary) !important;
 	}
 
@@ -322,5 +332,16 @@
 	.nim-peer.nim-peer_small .nim-peer--photo > img::after,
 	.nim-peer.nim-peer_small .nim-peer--photo .im_grid > img::after {
 		background-color: var(--vkui--color_transparent--hover);
+	}
+
+	.Dropdown__in,
+	/* выбор реакции для поста */
+	.ReactionsMenu {
+		background-color: var(--vkui--color_background_modal--active);
+	}
+
+	.Dropdown--b .Dropdown__in::before,
+	.Dropdown--b .Dropdown__in::after {
+		border-bottom-color: var(--vkui--color_background_modal--active);
 	}
 }
