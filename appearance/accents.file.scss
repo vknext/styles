@@ -1,0 +1,70 @@
+:root,
+:root body {
+	svg[fill="#2787F5"],
+	svg[fill="#007FFF"],
+	svg[fill="#0077FF"],
+	path[fill="#2787F5"],
+	path[fill="#007FFF"],
+	path[fill="#0077FF"],
+	rect[fill="#2787F5"],
+	rect[fill="#007FFF"],
+	rect[fill="#0077FF"],
+	path[fill="#07F"],
+	g[fill="#07F"] {
+		fill: var(--vknext_accent) !important;
+	}
+}
+
+html body,
+.vkui--vkBase--dark,
+.vkui--vkIOS--dark,
+.vkui--vkCom--dark,
+.vkui--vkBase--light,
+.vkui--vkIOS--light,
+.vkui--vkCom--light {
+	--accent: var(--vknext_accent) !important;
+	--blue_400: var(--vknext_accent) !important;
+	--action_sheet_action_foreground: var(--vknext_accent) !important;
+	--attach_picker_tab_active_background: var(--vknext_accent) !important;
+	--attach_picker_tab_active_text: var(--vknext_accent) !important;
+	--cell_button_foreground: var(--vknext_accent) !important;
+	--control_foreground: var(--vknext_accent) !important;
+	--counter_primary_background: var(--vknext_accent) !important;
+	--header_alternate_tab_active_indicator: var(--vknext_accent) !important;
+	--header_tab_active_indicator: var(--vknext_accent) !important;
+	--header_tint: var(--vknext_accent) !important;
+	--header_tint_alternate: var(--vknext_accent) !important;
+	--im_attach_tint: var(--vknext_accent) !important;
+	--im_reply_sender_text: var(--vknext_accent) !important;
+	--im_reply_separator: var(--vknext_accent) !important;
+	--im_text_name: var(--vknext_accent) !important;
+	--landing_login_button_background: var(--vknext_accent) !important;
+	--landing_primary_button_background: var(--vknext_accent) !important;
+	--landing_tertiary_button_foreground: var(--vknext_accent) !important;
+	--landing_text_title: var(--vknext_accent) !important;
+	--landing_secondary_button_foreground: var(--vknext_accent) !important;
+	--link_alternate: var(--vknext_accent) !important;
+	--loader_track_value_fill: var(--vknext_accent) !important;
+	--feed_recommended_friend_promo_background: var(--vknext_accent) !important;
+	--tabbar_active_icon: var(--vknext_accent) !important;
+	--tabbar_tablet_active_icon: var(--vknext_accent) !important;
+	--text_link: var(--vknext_accent) !important;
+	--text_name: var(--vknext_accent) !important;
+	--writebar_icon: var(--vknext_accent) !important;
+	--dynamic_blue: var(--vknext_accent) !important;
+	--text_link_hightlighted_background: var(--vknext_accent) !important;
+	--im_text_name: var(--vknext_accent) !important;
+	--button-background-color: var(--vknext_accent) !important;
+	--sky_100: var(--vknext_accent) !important;
+	--sky_200: var(--vknext_accent) !important;
+	--light_blue_700: var(--vknext_accent) !important;
+	--blue_bright: var(--vknext_accent) !important;
+	--vkui--color_icon_accent: var(--vknext_accent) !important;
+	--vkui--vkontakte_color_im_text_name: var(--vknext_accent) !important;
+	--vkui--color_text_link: var(--vknext_accent) !important;
+	--vkui--color_text_accent: var(--vknext_accent) !important;
+	--vkui--color_background_accent: var(--vknext_accent) !important;
+	--vkui--color_accent_blue: var(--vknext_accent) !important;
+	--vkui--color_stroke_accent: var(--vknext_accent) !important;
+	--blue_550: var(--vknext_accent) !important;
+}

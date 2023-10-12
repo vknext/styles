@@ -1,0 +1,11 @@
+/* акцентный цвет для иконок в шапке */
+
+body {
+	.TopNavBtn .TopNavBtn__icon {
+		color: var(--vkui--color_icon_accent);
+	}
+
+	#react_rootEcosystemServicesNavigationEntry svg {
+		color: var(--vkui--color_icon_accent);
+	}
+}

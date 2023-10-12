@@ -1,0 +1,20 @@
+/* Альтернативный скроллбар */
+
+::-webkit-scrollbar {
+	background-color: var(--scrollbar_background, var(--vkui--color_background_content));
+	width: 16px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: var(--scrollbar_background, var(--vkui--color_background_content));
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--scrollbar_thumb, var(--button_secondary_background_highlighted));
+	border-radius: 16px;
+	border: 4px solid var(--scrollbar_background, var(--vkui--color_background_content));
+}
+
+::-webkit-scrollbar-button {
+	display: none;
+}

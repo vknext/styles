@@ -1,0 +1,198 @@
+@mixin bubble {
+	background: rgba(0, 0, 0, 0.3) !important;
+	color: #fff !important;
+	border-radius: 15px !important;
+}
+
+._im_peer_history_w[chat_style]:not([chat_style=""]) {
+	.im-mess_srv .im-mess--text,
+	._im_bar_date > span,
+	.vkn-alt-sticker .vkn-alt-time,
+	.vkn-alt-sticker-reply .vkn-alt-time,
+	.im-mess--actions:hover,
+	.im-mess:hover .im-mess--actions,
+	.im-page--history-new-bar > span,
+	.im-activity {
+		@include bubble;
+	}
+
+	.vkn-alt-sticker,
+	.vkn-alt-sticker-reply {
+		.vkn-alt-time {
+			padding: 0 5px !important;
+
+			._im_mess_link {
+				color: #fff !important;
+			}
+		}
+	}
+
+	.im-mess--actions {
+		margin-left: 3px;
+
+		& > span {
+			color: #fff !important;
+		}
+	}
+
+	.im-page--history-new-bar {
+		margin: 5px 0 !important;
+		background: none;
+
+		&::before,
+		&::after {
+			background: none;
+		}
+	}
+
+	.im-mess-stack_fwd .im-mess-stack--pname > .im-mess-stack--lnk {
+		background: none !important;
+		color: var(--accent) !important;
+		border-radius: 0 !important;
+		box-shadow: none !important;
+	}
+
+	._im_bar_date {
+		background: none !important;
+
+		& > span {
+			background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) !important;
+			box-shadow: -10px 0 0 rgba(0, 0, 0, 0.3), 10px 0 0 rgba(0, 0, 0, 0.3);
+		}
+	}
+
+	.im-activity {
+		padding: 5px 10px 5px 35px;
+
+		.im-activity--icon .pr_bt {
+			background: white !important;
+		}
+
+		._im_typing_name {
+			color: white !important;
+		}
+	}
+
+	.im-mess_srv {
+		text-align: center;
+
+		.im-mess--text {
+			@include bubble;
+			padding: 5px 10px;
+			display: inline-block;
+		}
+	}
+
+	.im-mess .im-mess--text .im_srv_lnk {
+		color: #fff !important;
+	}
+}
+
+#reforged-root[chat_style]:not([chat_style=""]) {
+	.ConvoMain {
+		background-image: var(--vknext-chat_style_image);
+	}
+
+	.ConvoHistory,
+	.ConvoHistory__loader {
+		background: inherit;
+	}
+
+	.ConvoHistory__loader {
+		& > .vkuiSpinner {
+			color: var(--vkui--color_text_contrast);
+		}
+
+		svg.vkuiIcon--spinner_24 {
+			background: var(--vkui--color_overlay_primary);
+			border-radius: 10px;
+			padding: 5px;
+		}
+	}
+
+	.ConvoMain__composer {
+		padding: var(--convoMainComposerPaddingSideCondensed, 8px);
+	}
+
+	.DateSeparator {
+		background: var(--vkui--color_overlay_primary);
+		color: var(--vkui--color_text_contrast);
+	}
+
+	.ServiceMessage {
+		background: var(--vkui--color_overlay_primary);
+		color: var(--vkui--color_text_contrast);
+		border-radius: 8px;
+	}
+
+	.ConvoStack--centered + .ConvoStack--centered {
+		margin-top: calc(var(--messageVerticalIndent, 8px) * 0.5);
+	}
+
+	.ConvoHistory__separator--unread {
+		background: var(--vkui--color_overlay_primary);
+		color: var(--vkui--color_text_contrast);
+		border-radius: 8px;
+
+		&::after,
+		&::before {
+			background: none;
+		}
+	}
+
+	.ConvoMessage__authorLink,
+	.ConvoPinnedMessage__authorLink {
+		color: var(--vknext-chat_style_accent);
+	}
+
+	.ConvoHeader {
+		--vkui--color_icon_secondary: var(--vknext-chat_style_accent);
+	}
+
+	.ConvoProfileNew,
+	.ConvoProfileNew__content,
+	.ConvoProfile {
+		--vkui--color_icon_accent: var(--vknext-chat_style_accent);
+		--vkui--color_text_link: var(--vknext-chat_style_accent);
+	}
+
+	.ConvoHistory__selectToggler {
+		border-color: var(--vkui--color_text_contrast);
+
+		&.ConvoHistory__selectToggler--active.ConvoHistory__selectToggler--visible,
+		&.ConvoHistory__selectToggler--out {
+			background-color: var(--vkui--color_text_contrast);
+		}
+	}
+
+	.ConvoHistory__selectTogglerIcon {
+		color: var(--vkui--color_accent_blue);
+	}
+
+	.ConvoHistory__messageBlock {
+		&:not(.ConvoHistory__messageBlock--out) {
+			.MessagePreview__attach,
+			.Reply__authorLink {
+				color: var(--vknext-chat_style_accent);
+			}
+
+			.Reply::before {
+				background-color: var(--vknext-chat_style_accent);
+			}
+		}
+
+		&.ConvoHistory__messageBlock--out {
+			--vkui--color_text_link: var(--vkui--color_text_contrast);
+
+			.ConvoMessageBottomInfo__date {
+				color: var(--vkui--color_text_contrast);
+			}
+
+			.ConvoMessage,
+			.ForwardedMessage__date,
+			.AttachWall__info {
+				color: var(--vkui--color_text_contrast);
+			}
+		}
+	}
+}

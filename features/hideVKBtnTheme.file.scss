@@ -1,0 +1,6 @@
+/* скрываем вкашные кнопки изменения темы */
+
+.TopProfileItem--appearance,
+.settings_line:not(.settings_line[id]):nth-child(2) {
+	display: none !important;
+}

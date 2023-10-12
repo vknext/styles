@@ -1,0 +1,36 @@
+/*текст*/
+.im-mess-stack--lnk, /*автор сообщения*/
+._im_ui_peers_list .ui_rmenu_item_label, /*список чатов справа в классическом мессенджере*/
+._im_page_peer_name, /*заголовок чата*/
+.nim-dialog--name, /*название диалога в списке*/
+.im-page-pinned--name, /*закреп имя автора*/
+.im-replied--author /*автор реплая*/,
+.post_author .author, .wall_module .author, .wall_module .copy_author,
+.PostHeaderTitle__authorName,
+.ConvoTitle,
+.PeerTitle,
+.Reply__authorLink,
+.ConvoPinnedMessage__authorLink,
+.ConvoListItem__author,
+.friends_field_title,
+.im-fwd--title-name,
+.nim-dialog--who,
+._im_typing_name,
+.mem_link,
+.reply_parent_link,
+.Link > span,
+.Entity__photo,
+.ConvoProfileName__name {
+	filter: blur(5px) !important;
+}
+
+/*фото*/
+.nim-peer--photo-w img, /*ава участника чата*/
+.nim-peer img /*тоже ава участника чата но со значком онлайна*/,
+.im-prebody img,
+.AvatarRich__img,
+.MEAvatar__img,
+.post_img,
+.AvatarSimple__img {
+	filter: blur(10px) grayscale(1) !important;
+}

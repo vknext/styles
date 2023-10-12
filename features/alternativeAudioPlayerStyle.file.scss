@@ -1,0 +1,22 @@
+html body .audio_page_player_wrap,
+html body .audio_page_player2 {
+	height: 115px !important;
+}
+
+html body .audio_page_player_btns {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+html body .audio_page_player_volume_wrap {
+	position: absolute;
+	bottom: 23px;
+	right: 12px;
+}
+
+html body .audio_page_content_block_wrap.ui_scroll_container {
+	max-height: calc(100vh - 220px);
+}

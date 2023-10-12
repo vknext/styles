@@ -1,0 +1,350 @@
+/* основной файл темы
+здесь исправляем покраску некоторых компонентов VK
+*/
+
+:root body {
+	.post_from_tt_row.active {
+		background-color: var(--vkui--color_transparent--active) !important;
+		color: var(--vkui--color_text_primary) !important;
+	}
+
+	.ChatSettingsMembersWidget,
+	.tt_default,
+	.tt_default_right {
+		background-color: var(--vkui--color_background_modal);
+	}
+
+	/* фикс акцентного выбора диалога в новом интерфейсе мессенджера */
+	.nim-dialog:not(.nim-dialog_deleted) {
+		&:not(.nim-dialog_classic).nim-dialog_selected {
+			.nim-dialog--date {
+				color: var(--vkui--color_text_secondary);
+			}
+
+			.nim-dialog--preview {
+				color: var(--vkui--color_text_subhead);
+			}
+		}
+
+		&.nim-dialog.nim-dialog_selected:hover {
+			border-color: var(--vkui--color_separator_primary_alpha);
+		}
+
+		&:hover + .nim-dialog.nim-dialog_selected,
+		&.nim-dialog_selected + .nim-dialog {
+			border-color: var(--vkui--color_separator_primary_alpha);
+		}
+
+		&:not(.nim-dialog_classic).nim-dialog_selected .nim-dialog--photo .online.mobile::after {
+			--online-badge-background: var(--vkui--color_background_content);
+		}
+
+		&:not(.nim-dialog_classic).nim-dialog_selected {
+			background-color: var(--vkui--color_transparent--active);
+		}
+	}
+
+	/* фикс белых/пустых аватарок */
+	.friends_photo_img,
+	.nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo > img,
+	.im_grid > img,
+	.nim-peer.nim-peer_smaller .nim-peer--photo > img,
+	.nim-peer.nim-peer_small .nim-peer--photo > img,
+	img.post_img,
+	img.reply_img,
+	.im-prebody img,
+	.im-popular--avatar::before,
+	.im-popular--avatar::after,
+	.im-popular--avatar {
+		background-color: var(--vkui--color_background_tertiary) !important;
+	}
+
+	.media_link__label,
+	.PostBottomAction--withBg {
+		background-color: var(--vkui--color_background_tertiary);
+	}
+
+	/* фикс иконок в врайтбаре */
+	.im-send-btn__icon {
+		color: var(--vkui--color_write_bar_icon);
+	}
+
+	#ads_left.ads_left_empty + .left_menu_nav_wrap {
+		border-color: var(--vkui--color_separator_primary);
+	}
+
+	.msg,
+	.box_msg,
+	.box_msg_gray {
+		background-color: var(--vkui--color_background_content);
+	}
+
+	.emoji_smile_cont2:hover {
+		background: var(--vkui--color_transparent--hover);
+	}
+
+	.gift_price,
+	.gift_free {
+		background-color: var(--vkui--color_background_secondary);
+		color: var(--vkui--color_icon_accent);
+	}
+
+	.im-page_classic.im-page .im-page--dialogs-search {
+		background-color: var(--vkui--color_background_content);
+	}
+
+	.olist_item_name {
+		color: var(--vkui--color_text_primary);
+	}
+
+	nobr#stl_text {
+		color: var(--vkui--color_text_secondary);
+		filter: grayscale(1);
+	}
+
+	.box_controls,
+	.box_title_wrap {
+		background: var(--vkui--color_background_modal);
+	}
+
+	.BtAddReportButton {
+		color: var(--vkui--color_text_primary);
+	}
+
+	.vkuiScreenSpinner .vkuiScreenSpinner__container {
+		background: var(--vkui--color_background_tertiary);
+	}
+
+	.EcommSkeleton__block:after {
+		background: linear-gradient(130deg, rgb(35 35 36 / 0%) 40%, rgb(44 45 46 / 40%), rgb(35 35 36 / 0%) 60%)
+			no-repeat -800px 0;
+	}
+
+	.docs_action_icon {
+		filter: grayscale(1);
+	}
+
+	/* лендинги */
+	--pagesColorNavSelected: var(--vkui--color_text_primary);
+	--colorGray: var(--vkui--color_text_primary);
+	--footerBorderColor: var(--separator_alternate);
+	--pageButtonBackgroundColor: var(--vkui--color_transparent--hover);
+	--colorNavBorderHover: var(--vkui--color_separator_primary);
+	--bottomNavTextColor: var(--vkui--color_text_secondary);
+
+	.BlogPage--defaultTheme,
+	.BlogPost--defaultTheme {
+		--blogPageHeaderTextColor: var(--vkui--color_icon_accent);
+		--blogPageCounterColor: var(--vkui--color_text_primary);
+	}
+
+	.BlogPostThumb__text {
+		color: var(--vkui--color_text_secondary);
+	}
+
+	.PageNavigation_wrap {
+		background-color: var(--vkui--color_header_background);
+	}
+
+	.TeamPageHeader__subtitle,
+	.AboutPageMetric__value,
+	.PageSectionTitle,
+	.PageTitle {
+		color: var(--vkui--color_text_primary);
+	}
+
+	.AboutLinksItem__subtitle,
+	.ScrollElement__subtitle,
+	.AboutLocation__description,
+	.ProductsLandingItem__subtitle,
+	.AboutPageMetric__title,
+	.ProductsPageHeader__appDescription {
+		color: var(--vkui--color_text_secondary);
+	}
+
+	.TeamPageJoinBlock__button {
+		color: var(--button_primary_foreground);
+		background-color: var(--button_primary_background);
+	}
+
+	/* стикеры */
+	.im_stickers_promo_banner,
+	.im_stickers_bl_wrap {
+		background-color: var(--vkui--color_background);
+	}
+
+	.box_body .im_stickers_store_wrap .ui_tabs {
+		border-color: var(--vkui--color_separator_primary);
+	}
+
+	.im_sticker_bl_info {
+		background-color: var(--vkui--color_background_secondary);
+	}
+
+	.im_sticker_bl_name {
+		color: var(--vkui--color_text_primary);
+	}
+
+	.im_sticker_bl_desc {
+		color: var(--vkui--color_text_secondary);
+	}
+
+	.page_block .im_stickers_promo_banner,
+	.page_block .im_stickers_bl_wrap {
+		background-color: var(--vkui--color_background_content);
+	}
+
+	/* рекламный кабинет */
+
+	.Header {
+		background-color: var(--vkui--color_header_background);
+		box-shadow: 0 1px 0 var(--vkui--color_separator_primary);
+	}
+
+	.HeaderBudget__link,
+	.HeaderSectionSwitcher__buttonText {
+		color: var(--vkui--color_text_primary);
+	}
+
+	.HeaderNotifier {
+		color: var(--vkui--color_icon_accent);
+		--notifier-hover-bg: var(--vkui--color_transparent--hover);
+	}
+
+	.SideOfficeMenu__link:focus,
+	.SideOfficeMenu__link:hover,
+	.SideOfficeMenu__link--active:focus,
+	.SideOfficeMenu__link--active:hover,
+	.HeaderSectionSwitcher__button:focus,
+	.HeaderSectionSwitcher__button:hover,
+	.HeaderProfile:focus,
+	.HeaderProfile:hover,
+	.HeaderBudget:focus,
+	.HeaderBudget:hover {
+		background-color: var(--vkui--color_transparent--hover);
+	}
+
+	.HeaderBudget__button a {
+		color: var(--vkui--color_icon_accent);
+	}
+
+	.SideOfficeMenu__link--active {
+		background-color: var(--button_secondary_background);
+	}
+
+	.SideOfficeMenu__navList::after,
+	.SideOfficeMenu {
+		background-color: var(--vkui--color_background_content);
+	}
+
+	.SideOfficeMenu__link--active .SideOfficeMenu__linkIcon {
+		color: var(--vkui--color_icon_accent);
+	}
+
+	.BudgetStats__td--money,
+	.Breadcrumb--bold,
+	.SideOfficeMenu__link,
+	.SideOfficeMenu__linkText {
+		color: var(--vkui--color_text_primary);
+	}
+
+	.SideOfficeMenu__nav::after {
+		background: linear-gradient(rgba(35, 35, 36, 0), var(--vkui--color_transparent--hover) 70%), 0 100%;
+	}
+
+	.SideOfficeMenu__linkIcon {
+		color: var(--vkui--color_icon_secondary);
+	}
+
+	.BudgetBalance__autoBudget,
+	.HeaderProfile__DropdownSeparator,
+	.Breadcrumbs__list,
+	.SideOfficeMenu,
+	.SideOfficeMenu__toggleButton {
+		border-color: var(--vkui--color_separator_primary);
+	}
+
+	.Breadcrumbs {
+		background-color: var(--vkui--color_background_content);
+	}
+
+	.GoalFormatConverter__withoutGoalBtn,
+	.GoalsColumn__header,
+	.GoalsColumn__headerText,
+	.HeaderProfile__DropdownUserConnect,
+	.Breadcrumb__link {
+		color: var(--vkui--color_text_secondary);
+	}
+
+	.GoalsFilterList__item {
+		color: var(--panel_tab_inactive_text);
+		background-color: var(--vkui--color_header_background);
+		border-color: rgb(0 0 0 / 0);
+		transition: 0.3s;
+	}
+
+	.HeaderProfile__DropdownUser:hover,
+	.HeaderProfile__DropdownRow:hover,
+	.GoalsFilterList__item:hover {
+		background-color: var(--vkui--color_transparent--hover);
+	}
+
+	.GoalsFilterList__item--selected {
+		background-color: var(--panel_tab_active_background);
+		border-color: rgb(0 0 0 / 0);
+		color: var(--panel_tab_active_text);
+	}
+
+	.GoalsList__column,
+	.Office__content .ads_edit_page_wrap3,
+	.SideMenu__office {
+		background-color: var(--vkui--color_background_content);
+	}
+
+	.GoalsListItem {
+		background-color: var(--vkui--color_transparent--hover);
+		color: var(--vkui--color_text_primary);
+		border-color: var(--vkui--color_separator_primary);
+	}
+
+	.GoalsListItem--disabled,
+	.GoalsListItem--disabled:hover {
+		background-color: var(--vkui--color_transparent--hover);
+		border-color: var(--vkui--color_separator_primary);
+	}
+
+	.HeaderProfile__Dropdown {
+		background-color: var(--vkui--color_background_content);
+		box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 0 0 1px var(--vkui--color_separator_primary);
+	}
+
+	.HeaderProfile__DropdownUserName,
+	.HeaderProfile__DropdownRow {
+		color: var(--vkui--color_text_primary);
+	}
+
+	.BudgetStats,
+	.BudgetBalance {
+		background-color: var(--vkui--color_background_secondary);
+		border-color: var(--vkui--color_separator_primary);
+	}
+
+	.nim-peer.nim-peer_small .nim-peer--photo > img::after,
+	.nim-peer.nim-peer_small .nim-peer--photo .im_grid > img::after {
+		background-color: var(--vkui--color_transparent--hover);
+	}
+
+	.Dropdown__in,
+	/* выбор реакции для поста */
+	.ReactionsMenu,
+	/* выбор реакции для сообщения */
+	.MessageReactionsPanel,
+	.MessageReactionsPanel__arrow:after {
+		background-color: var(--vkui--color_background_modal--active);
+	}
+
+	.Dropdown--b .Dropdown__in::before,
+	.Dropdown--b .Dropdown__in::after {
+		border-bottom-color: var(--vkui--color_background_modal--active);
+	}
+}

@@ -1,0 +1,38 @@
+/* изменение акцентов в настройках */
+
+.vkuiPopperPortal,
+.vkui--vkBase--dark,
+.vkui--vkIOS--dark,
+.vkui--vkCom--dark,
+.vkui--vkBase--light,
+.vkui--vkIOS--light,
+.vkui--vkCom--light,
+:root body {
+	--vkui--color_icon_accent: var(--vknext_accent) !important;
+	--vkui--color_background_accent: var(--vknext_accent) !important;
+	--vkui--color_stroke_accent: var(--vknext_accent) !important;
+	--vkui--color_accent_blue: var(--vknext_accent) !important;
+	--vkui--color_icon_accent_themed: var(--vknext_accent) !important;
+	--vkui--vkontakte_color_im_text_name: var(--vknext_accent) !important;
+	--vkui--color_text_link: var(--vknext_accent) !important;
+	--vkui--color_text_accent: var(--vknext_accent) !important;
+	--vkui--color_background_accent: var(--vknext_accent) !important;
+	--vkui--color_accent_blue: var(--vknext_accent) !important;
+}
+
+.vkuiSwitch__pseudo {
+	--vkui--color_icon_accent: var(--vknext_accent) !important;
+}
+
+svg[fill="#2787F5"],
+svg[fill="#007FFF"],
+svg[fill="#0077FF"],
+path[fill="#2787F5"],
+path[fill="#007FFF"],
+path[fill="#0077FF"],
+rect[fill="#2787F5"],
+rect[fill="#007FFF"],
+rect[fill="#0077FF"],
+path[fill="#07F"] {
+	fill: var(--vknext_accent) !important;
+}

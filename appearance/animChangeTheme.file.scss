@@ -1,0 +1,81 @@
+/* анимания изменения темы (beta) */
+
+.FCPanel__add,
+.FCPanel__list,
+.TopSearch__input,
+#page_header_cont,
+.side_bar_inner,
+.page_block {
+	transition: background-color 200ms linear, border-color 200ms linear, box-shadow 200ms linear !important;
+}
+
+.ui_toggler_label,
+.feed_lists_icon_content,
+.feed_filter_icon,
+.ui_rmenu_item,
+.ui_rmenu_subitem,
+.post_date,
+.post_date .post_link,
+.post_date .wall_text_name_explain_promoted_post,
+.post_author .author,
+.wall_module .author,
+.wall_module .copy_author,
+.wall_post_text,
+.LeftMenu__itemLink,
+span.current_text,
+.left_menu_nav,
+.module_header .header_top,
+.LeftMenu__icon,
+.PageActionCell__spinner,
+.PageActionCell__icon,
+.profile_info_row .label,
+.profile_info_row .labeled,
+.TopNavBtn__icon,
+.page_name,
+.TopHomeLink {
+	transition: color 200ms linear !important;
+}
+
+.vkuiTabsItem,
+[dir] .PostBottomAction--withBg,
+[dir] input.text,
+[dir] input.search,
+[dir] input.big_text,
+[dir] input.dark,
+[dir] .fakeinput,
+[dir] div[contenteditable="true"],
+[dir] textarea,
+[dir] .page_block_header,
+.FlatButton {
+	transition: background-color 200ms linear, color 200ms linear !important;
+}
+
+[dir] .ui_rmenu_sep,
+[dir] .deep_active .post_replies_header,
+[dir] .deep_active.wall_module .post_replies_header,
+.counts_module,
+[dir] #ads_left.ads_left_empty + .left_menu_nav_wrap,
+.LeftMenu__separator {
+	transition: border-color 200ms linear !important;
+}
+
+[dir] .ui_toggler.on:after,
+[dir] .ui_toggler,
+[dir] .online::after {
+	transition: background-color 200ms linear, border-color 200ms linear !important;
+}
+
+[dir] body .PostBottomAction--withBg::before {
+	transition: background-image 200ms linear !important;
+}
+
+[dir] body,
+[dir] #page_wrap,
+[dir] .vknBgWrapper {
+	transition: background-color 200ms linear !important;
+}
+
+[dir] .ui_rmenu_item_sel,
+[dir] .ui_rmenu_item_sel:hover {
+	transition: background-color 200ms linear, border-color 200ms linear, color 100ms linear !important;
+}

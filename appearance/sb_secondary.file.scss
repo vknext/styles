@@ -1,0 +1,10 @@
+html body {
+	.side_bar,
+	.side_bar_inner,
+	#react_rootLeftMenuRoot {
+		ol li {
+			--vkui--color_text_primary: var(--vkui--color_text_secondary) !important;
+			--counter_secondary_background: var(--vkui--color_icon_tertiary_alpha) !important;
+		}
+	}
+}

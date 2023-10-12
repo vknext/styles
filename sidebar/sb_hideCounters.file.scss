@@ -1,0 +1,6 @@
+body .side_bar {
+	.left_count_wrap,
+	[class^='LeftMenuItem-module__counter--'] {
+		display: none;
+	}
+}

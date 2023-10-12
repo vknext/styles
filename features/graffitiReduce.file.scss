@@ -1,0 +1,9 @@
+/* уменьшаем размер граффити в сообщениях */
+
+img._im_graffiti,
+.page_media_graffiti_doc img {
+	max-width: 128px !important;
+	height: auto;
+	max-height: 128px !important;
+	width: auto;
+}
