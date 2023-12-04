@@ -358,3 +358,11 @@
 		border-bottom-color: var(--vkui--color_background_modal--active);
 	}
 }
+
+// фикс цвета фона в новом мессенджере
+:root {
+	:is([scheme="vkcom_dark"], .vkui--vkBase--dark, .vkui--vkCom--dark)
+		:is(.VKCOMMessenger__integrationRoot .MEAppConfig, .VKCOMMessenger__integrationRoot.MEAppConfig) {
+		--convoHistoryBackgroundColor: var(--vkui--color_background_content);
+	}
+}
