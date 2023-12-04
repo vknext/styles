@@ -339,8 +339,18 @@
 	.ReactionsMenu,
 	/* выбор реакции для сообщения */
 	.MessageReactionsPanel,
-	.MessageReactionsPanel__arrow:after {
-		background-color: var(--vkui--color_background_modal--active);
+	.MessageReactionsPanel__arrow:after,
+	/* новый вид мессенджера */
+	.ConvoMain__composerContent.ConvoComposer,
+	.MessageActionsButtonWrapper, 
+	/* меню действий с постом */
+	.ui_actions_menu--actionSheet,
+	/* стрелочки */
+	[class^="vkuiScrollArrow__icon"],
+	.ui_gallery__arrow__icon, .ui_clips__gallery__arrow__icon,
+	/* табы */
+	.vkuiTabsItem--selected.vkuiTabsItem--mode-accent {
+		background-color: var(--vkui--color_background_modal--hover);
 	}
 
 	.Dropdown--b .Dropdown__in::before,
