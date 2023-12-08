@@ -357,6 +357,23 @@
 	.Dropdown--b .Dropdown__in::after {
 		border-bottom-color: var(--vkui--color_background_modal--active);
 	}
+
+	/* Табы в блоках */
+	.ui_tab_new.ui_tab_sel,
+	.ui_tab_new.ui_tab_group_sel,
+	.ui_tab_new.ui_tab_sel:hover,
+	.ui_tab_new.ui_tab_group_sel:hover,
+	.ui_tab_new.ui_tab_sel:active,
+	.ui_tab_new.ui_tab_group_sel:active {
+		color: var(--vkui--color_text_accent);
+    		background-color: var(--vkui--color_background_modal--active);
+	}
+
+	/* Тоже табы, только у профиля и с модулями */
+	.vkuiTabsItem--selected.vkuiTabsItem--mode-accent .vkuiTabsItem__label,
+	.vkuiTabsItem--selected.vkuiTabsItem--mode-accent .vkuiTabsItem__before {
+		color: var(--vkui--color_text_accent);
+	}
 }
 
 // фикс цвета фона в новом мессенджере
