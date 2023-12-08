@@ -33,8 +33,8 @@ body .side_bar {
 			top: 0px;
 			left: 8px;
 			transform: scale(0.6);
-			background: var(--counter_prominent_background) !important;
-			color: var(--counter_prominent_text) !important;
+			background: var(--vkui--color_left_menu_counter_background)!important;
+    			color: var(--vkui--color_left_menu_counter_text)!important;
 		}
 
 		&:hover {
