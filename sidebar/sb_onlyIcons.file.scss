@@ -79,3 +79,17 @@ li.HeaderNav__item.HeaderNav__item--logo {
 .LeftMenu__settings {
 	right: 8px !important;
 }
+
+.LeftMenuLegacySkeleton__label {
+	display: none !important;
+}
+
+.LeftMenuLegacySkeleton__icon {
+	margin-right: 0 !important;
+}
+
+.LeftMenuLegacySkeleton__item {
+	padding-right: 0;
+	padding-left: 0;
+	justify-content: center;
+}
