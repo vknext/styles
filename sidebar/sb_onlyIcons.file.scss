@@ -33,8 +33,6 @@ body .side_bar {
 			top: 0px;
 			left: 8px;
 			transform: scale(0.6);
-			background: var(--counter_prominent_background) !important;
-			color: var(--counter_prominent_text) !important;
 		}
 
 		&:hover {
@@ -58,7 +56,7 @@ body .side_bar {
 	}
 
 	.side_bar_inner {
-		width: 42px !important;
+		width: 40px !important;
 		padding: 2px 0 !important;
 		margin-top: 64px !important;
 	}
