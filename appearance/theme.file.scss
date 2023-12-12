@@ -357,6 +357,11 @@
 	.Dropdown--b .Dropdown__in::after {
 		border-bottom-color: var(--vkui--color_background_modal--active);
 	}
+
+	.VKCOMMessenger__integrationRoot.VKCOMMessenger__integrationRoot .MEAppConfig,
+	.VKCOMMessenger__integrationRoot.VKCOMMessenger__integrationRoot.MEAppConfig {
+		--composerBackgroundColor: var(--vkui--color_background_modal--hover);
+	}
 }
 
 // фикс цвета фона в новом мессенджере
