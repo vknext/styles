@@ -31,7 +31,14 @@
 div[class^="UserRichCell-module__name--"] > a,
 .labeled.name > a,
 .stories_feed_preview_author_name,
-div[class^="EcosystemAccountMenuUser_name"] {
+div[class^="EcosystemAccountMenuUser_name"],
+.page_name,
+.people_cell_name > a,
+.group_friends_photos_text,
+.group_name,
+.group_row_title,
+.blst_mem ,
+.bp_author {
 	filter: blur(5px) !important;
 }
 
@@ -47,6 +54,8 @@ div[class^="EcosystemAccountMenuUser_name"] {
 .vkuiImageBase__img,
 .post_field_user_image,
 .stories_feed_preview_author_cell,
-.TopNavBtn__profileImg {
+.TopNavBtn__profileImg,
+.blst_img,
+.bp_img {
 	filter: blur(10px) grayscale(1) !important;
 }
