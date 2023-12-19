@@ -349,7 +349,8 @@
 	[class^="vkuiScrollArrow__icon"],
 	.ui_gallery__arrow__icon, .ui_clips__gallery__arrow__icon,
 	/* табы */
-	.vkuiTabsItem--selected.vkuiTabsItem--mode-accent {
+	.vkuiTabsItem--selected.vkuiTabsItem--mode-accent,
+	.DateSeparator--active {
 		background-color: var(--vkui--color_background_modal--hover);
 	}
 
@@ -361,6 +362,7 @@
 	.VKCOMMessenger__integrationRoot.VKCOMMessenger__integrationRoot .MEAppConfig,
 	.VKCOMMessenger__integrationRoot.VKCOMMessenger__integrationRoot.MEAppConfig {
 		--composerBackgroundColor: var(--vkui--color_background_modal--hover);
+		--hopNavigationButtonBackgroundColor: var(--vkui--color_background_modal--hover);
 	}
 }
 
