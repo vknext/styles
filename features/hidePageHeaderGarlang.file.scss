@@ -1,0 +1,6 @@
+.page_header_wrap,
+#page_header_wrap {
+	[class^="index-module__root--"] {
+		display: none !important;
+	}
+}
