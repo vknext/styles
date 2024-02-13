@@ -681,14 +681,14 @@ blockquote,
 .im-page_classic .im-page--header.ui_search._im_dialogs_search::before,
 .im-page_classic .im-page--chat-header._im_dialog_actions::before,
 .im-page_classic .im-page--chat-input._im_chat_input_w::before {
-	background-color: var(--background_page);
+	background-color: var(--vkui--color_background);
 }
 
 /*ставим афтеру цвет хедера/футера*/
 .im-page_classic .im-page--header.ui_search._im_dialogs_search::after,
 .im-page_classic .im-page--chat-header._im_dialog_actions::after,
 .im-page_classic .im-page--chat-input._im_chat_input_w::after {
-	background-color: var(--background_content);
+	background-color: var(--vkui--color_background_content);
 }
 
 /*закругляем after на хедере*/
@@ -707,7 +707,7 @@ blockquote,
 .im-page_classic .im-page--header,
 .im-page_classic .im-page--chat-header-in,
 .im-page_classic ._im_chat_input_w {
-	background: var(--background_page) !important;
+	background: var(--vkui--color_background) !important;
 	/*не transparent, потому что на хроме артефачит))*/
 }
 
@@ -718,7 +718,7 @@ blockquote,
 }
 
 .im-page_classic.im-page_group .im-page--dialogs-search {
-	background: var(--background_content) !important;
+	background: var(--vkui--color_background_content) !important;
 }
 
 .bookmark_tag {

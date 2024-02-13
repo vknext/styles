@@ -127,7 +127,7 @@
 	/* лендинги */
 	--pagesColorNavSelected: var(--vkui--color_text_primary);
 	--colorGray: var(--vkui--color_text_primary);
-	--footerBorderColor: var(--separator_alternate);
+	--footerBorderColor: var(--vkui--color_separator_secondary);
 	--pageButtonBackgroundColor: var(--vkui--color_transparent--hover);
 	--colorNavBorderHover: var(--vkui--color_separator_primary);
 	--bottomNavTextColor: var(--vkui--color_text_secondary);
@@ -163,8 +163,8 @@
 	}
 
 	.TeamPageJoinBlock__button {
-		color: var(--button_primary_foreground);
-		background-color: var(--button_primary_background);
+		color: var(--vkui--color_text_contrast_themed);
+		background-color: var(--vkui--color_background_accent_themed);
 	}
 
 	/* стикеры */
@@ -229,7 +229,7 @@
 	}
 
 	.SideOfficeMenu__link--active {
-		background-color: var(--button_secondary_background);
+		background-color: var(--vkui--color_background_accent_themed);
 	}
 
 	.SideOfficeMenu__navList::after,

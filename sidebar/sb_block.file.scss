@@ -7,7 +7,7 @@ body.new_header_design #ads_left.ads_left_empty + .left_menu_nav_wrap {
 }
 
 .side_bar_inner {
-	background-color: var(--block, var(--background_content)) !important;
+	background-color: var(--vkui--color_background_content) !important;
 	box-shadow: var(--page-block-shadow) !important;
 	padding: 0 !important;
 	border-radius: var(--vkui--size_border_radius_paper--regular);

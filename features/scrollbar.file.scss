@@ -10,7 +10,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: var(--scrollbar_thumb, var(--button_secondary_background_highlighted));
+	background-color: var(--scrollbar_thumb, var(--vkui--color_icon_tertiary));
 	border-radius: 16px;
 	border: 4px solid var(--scrollbar_background, var(--vkui--color_background_content));
 }
