@@ -6,12 +6,15 @@
 }
 
 .OwnerPageAvatar--nft .OwnerPageAvatar__underlay,
-.AvatarRich--nft .AvatarRich__img {
+.AvatarRich--nft .AvatarRich__img,
+.OwnerPageAvatar--nft .vkuiImageBase__img {
 	clip-path: none !important;
 	-webkit-clip-path: none !important;
 	border-radius: 50% !important;
 }
 
+
+.OwnerPageAvatar--nft .vkuiAvatar svg
 .AvatarRich__heptagonUnderlay {
 	display: none !important;
 }
