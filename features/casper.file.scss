@@ -38,8 +38,25 @@ div[class^="EcosystemAccountMenuUser_name"],
 .group_name,
 .group_row_title,
 .blst_mem ,
-.bp_author {
+.bp_author,
+[hrefparams="_ref=friends_right"] .vkuiSimpleCell__middle,
+.audio_pl_snippet__artist_link[href^="/audios"],
+.audio_friend_name,
+.ow_ava,
+.VideoCard__ownerLink,
+[class^="VideoCardOwnerItem-module__link"],
+[class^="CommentBase-module__nameWrapper"] > a,
+a[href^="/clips/"] .vkuiRichCell__children,
+#react_rootEcosystemMultiAccountsEntry .vkuiSimpleCell__content > .vkuiTypography,
+.im_srv_lnk,
+.nim-dialog--preview > span[class=""],
+.EditableLabel__text,
+li[id^="l_mgid"] [class^="LeftMenuItem-module__label"] {
 	filter: blur(5px) !important;
+}
+
+.EditableLabel {
+	pointer-events: none !important;
 }
 
 /*фото*/

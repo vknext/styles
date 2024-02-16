@@ -53,6 +53,9 @@
 	float: none !important;
 	border-radius: 50% !important;
 	margin: 0 !important;
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
 }
 
 #groups_list_admin.groups_list,
