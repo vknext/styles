@@ -7,13 +7,14 @@
 
 .OwnerPageAvatar--nft .OwnerPageAvatar__underlay,
 .AvatarRich--nft .AvatarRich__img,
-.OwnerPageAvatar--nft .vkuiImageBase__img {
+.OwnerPageAvatar--nft .vkuiImageBase__img,
+.vkuiAvatar[class*='RichAvatar-module'] img {
 	clip-path: none !important;
 	-webkit-clip-path: none !important;
 	border-radius: 50% !important;
 }
 
-
+.vkuiAvatar[class*='RichAvatar-module'] svg,
 .OwnerPageAvatar--nft .vkuiAvatar svg,
 .AvatarRich__heptagonUnderlay {
 	display: none !important;
